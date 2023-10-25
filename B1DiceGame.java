@@ -12,8 +12,9 @@ class B1DiceGame extends ConsoleProgram {
     int intTotal;
     int intDiceRoll1;
     int intDiceRoll2; 
+    int intOneHundred;
     
-    for (int intOneHundred = 1; intOneHundred <= 100; intOneHundred++){
+    for (intOneHundred = 1; intOneHundred <= 100; intOneHundred++){
         Random randomA = new Random(); 
         Random randomB = new Random();
         intDiceRoll1 = randomA.nextInt(6); 

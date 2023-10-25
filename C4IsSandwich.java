@@ -10,20 +10,15 @@ class C4IsSandwich extends ConsoleProgram {
     int intLastB; 
     int intFirstB; 
     String strMiddle; 
-    int intD1;
 
     strBread = readLine("Enter a string with a word between 'bread': "); 
 
     intFirstB = strBread.indexOf("bread");
-    System.out.println(intFirstB);
 
     intLastB = strBread.indexOf("bread", intFirstB + 1); 
-    System.out.println(intLastB); 
-
-    intD1 = strBread.indexOf("d"); 
 
     if (intFirstB != -1 && intLastB != -1 && intFirstB != intLastB) {
-        strMiddle = strBread.substring(intD1 + 1, intLastB); 
+        strMiddle = strBread.substring(intFirstB + 5, intLastB); 
         System.out.println(strMiddle); 
     }
     else {
